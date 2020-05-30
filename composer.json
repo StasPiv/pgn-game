@@ -1,0 +1,34 @@
+{
+  "name": "staspiv/pgn-game",
+  "description": "This is the application for chess train",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Stanislav Pivovartsev",
+      "email": "stanislav_pivovartsev@mail.ru"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/StasPiv/chessParser.git"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">7.2",
+    "dhtmlgoodies/chessparser": "dev-master",
+    "doctrine/collections": "^1.6",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "StasPiv\\PgnGame\\": "src/",
+      "StasPiv\\PgnGame\\Tests\\": "tests/"
+    }
+  }
+}
